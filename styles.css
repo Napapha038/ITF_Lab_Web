@@ -1,12 +1,22 @@
 nav {
-    background-color: deepskyblue;
+    background-color: #B0DB9C;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 body {
     margin: 0;
+    background-color: #ECFAE5;
 }
-p {
-    padding: 10px;
+.cont {
+    display: flex;
+    padding: 20px;
+}
+.update {
+    background-color: #DDF6D2;
+    margin: 20px;
+}
+div {
+    margin-left: 20px;
+    margin-right: 20px;
 }
