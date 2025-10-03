@@ -1,0 +1,12 @@
+nav {
+    background-color: deepskyblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body {
+    margin: 0;
+}
+p {
+    padding: 10px;
+}
