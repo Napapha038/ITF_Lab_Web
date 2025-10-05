@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     background: var(--bg);
-    font-family: 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica', 'sans-serif', 'Arial';
+    font-family: 'system-ui', 'Segoe UI', 'Helvetica', 'sans-serif', 'Arial';
 }
 nav {
     background-color: #B0DB9C;
@@ -46,6 +46,8 @@ hr {
     color: #333;
     background: var(--box);
     border-radius: 4px;
+    font-family: monospace, 'Courier New';
+    white-space: pre;
 }
 .grid {
     display:grid;
@@ -82,6 +84,32 @@ hr {
     row-gap: 3px;
     padding: 12px 12px 12px 0;
 }
+label {
+    display: flex;
+    font-size: 14px;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3px 0;
+}
+input, select {
+    padding: 2px;
+    border: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
 input[readonly] {
     background: #f0f0f0;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--box);
+    cursor: pointer;
+}
+.btn:hover {
+  background-color: #B0DB9C;
 }
