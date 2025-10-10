@@ -69,3 +69,24 @@ if (btnProceed) {
     refreshInputs();
   });
 }
+
+const btnConvert = document.getElementById('btnConvert');
+if (btnConvert) {
+  btnConvert.addEventListener('click', () => {
+    const input = Number((document.getElementById('converInput').value) || 0);
+    const select = document.getElementById('converCurrency').value;
+    const output = document.getElementById('converOutput');
+
+    const rateUSD = 32.07;
+    let result;
+
+    if (select == "USD") {
+      result = input * rateUSD;
+    }
+    else if (select == "THB") {
+      result = input / rateUSD;
+    }
+
+    output.value = result.toFixed();
+  });
+}
